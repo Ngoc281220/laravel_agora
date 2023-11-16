@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MeetingController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +22,14 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [MeetingController::class, 'meetingUser'])->name('home');
+Route::get('/createMeeting', [MeetingController::class, 'createMeeting'])->name('createMeeting');
+
+Route::get('/joinMeeting/{url}', [MeetingController::class, 'joinMeeting'])->name('joinMeeting');
+
+Route::post('/createRoom', [MeetingController::class, 'createRoom'])->name('createRoom');
+
+Route::get('/publisher', [MeetingController::class, 'joinPublisher'])->name('joinPublisher');
+
+Route::get('/subscriber', [MeetingController::class, 'joinSubscriber'])->name('joinSubscriber.');
+
 

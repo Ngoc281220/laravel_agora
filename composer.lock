@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0916371ad6944219d713280facc6746",
+    "content-hash": "37f945d06fee62ca516eaad8cf5ea376",
     "packages": [
         {
             "name": "brick/math",
@@ -2378,6 +2378,142 @@
             "time": "2023-02-08T01:06:31+00:00"
         },
         {
+            "name": "paragonie/random_compat",
+            "version": "v9.99.100",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*|5.*",
+                "vimeo/psalm": "^1"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com"
+                }
+            ],
+            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+            "keywords": [
+                "csprng",
+                "polyfill",
+                "pseudorandom",
+                "random"
+            ],
+            "support": {
+                "email": "info@paragonie.com",
+                "issues": "https://github.com/paragonie/random_compat/issues",
+                "source": "https://github.com/paragonie/random_compat"
+            },
+            "time": "2020-10-15T08:29:30+00:00"
+        },
+        {
+            "name": "paragonie/sodium_compat",
+            "version": "v1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/sodium_compat.git",
+                "reference": "e592a3e06d1fa0d43988c7c7d9948ca836f644b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/sodium_compat/zipball/e592a3e06d1fa0d43988c7c7d9948ca836f644b6",
+                "reference": "e592a3e06d1fa0d43988c7c7d9948ca836f644b6",
+                "shasum": ""
+            },
+            "require": {
+                "paragonie/random_compat": ">=1",
+                "php": "^5.2.4|^5.3|^5.4|^5.5|^5.6|^7|^8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^3|^4|^5|^6|^7|^8|^9"
+            },
+            "suggest": {
+                "ext-libsodium": "PHP < 7.0: Better performance, password hashing (Argon2i), secure memory management (memzero), and better security.",
+                "ext-sodium": "PHP >= 7.0: Better performance, password hashing (Argon2i), secure memory management (memzero), and better security."
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com"
+                },
+                {
+                    "name": "Frank Denis",
+                    "email": "jedisct1@pureftpd.org"
+                }
+            ],
+            "description": "Pure PHP implementation of libsodium; uses the PHP extension if it exists",
+            "keywords": [
+                "Authentication",
+                "BLAKE2b",
+                "ChaCha20",
+                "ChaCha20-Poly1305",
+                "Chapoly",
+                "Curve25519",
+                "Ed25519",
+                "EdDSA",
+                "Edwards-curve Digital Signature Algorithm",
+                "Elliptic Curve Diffie-Hellman",
+                "Poly1305",
+                "Pure-PHP cryptography",
+                "RFC 7748",
+                "RFC 8032",
+                "Salpoly",
+                "Salsa20",
+                "X25519",
+                "XChaCha20-Poly1305",
+                "XSalsa20-Poly1305",
+                "Xchacha20",
+                "Xsalsa20",
+                "aead",
+                "cryptography",
+                "ecdh",
+                "elliptic curve",
+                "elliptic curve cryptography",
+                "encryption",
+                "libsodium",
+                "php",
+                "public-key cryptography",
+                "secret-key cryptography",
+                "side-channel resistant"
+            ],
+            "support": {
+                "issues": "https://github.com/paragonie/sodium_compat/issues",
+                "source": "https://github.com/paragonie/sodium_compat/tree/v1.20.0"
+            },
+            "time": "2023-04-30T00:54:53+00:00"
+        },
+        {
             "name": "phpoption/phpoption",
             "version": "1.9.1",
             "source": {
@@ -2945,6 +3081,67 @@
             "time": "2023-10-14T21:56:36+00:00"
         },
         {
+            "name": "pusher/pusher-php-server",
+            "version": "7.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pusher/pusher-http-php.git",
+                "reference": "416e68dd5f640175ad5982131c42a7a666d1d8e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pusher/pusher-http-php/zipball/416e68dd5f640175ad5982131c42a7a666d1d8e9",
+                "reference": "416e68dd5f640175ad5982131c42a7a666d1d8e9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^7.2",
+                "paragonie/sodium_compat": "^1.6",
+                "php": "^7.3|^8.0",
+                "psr/log": "^1.0|^2.0|^3.0"
+            },
+            "require-dev": {
+                "overtrue/phplint": "^2.3",
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pusher\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Library for interacting with the Pusher REST API",
+            "keywords": [
+                "events",
+                "messaging",
+                "php-pusher-server",
+                "publish",
+                "push",
+                "pusher",
+                "real time",
+                "real-time",
+                "realtime",
+                "rest",
+                "trigger"
+            ],
+            "support": {
+                "issues": "https://github.com/pusher/pusher-http-php/issues",
+                "source": "https://github.com/pusher/pusher-http-php/tree/7.2.3"
+            },
+            "time": "2023-05-17T16:00:06+00:00"
+        },
+        {
             "name": "ralouphie/getallheaders",
             "version": "3.0.3",
             "source": {
@@ -3171,16 +3368,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v6.3.4",
+            "version": "v6.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "eca495f2ee845130855ddf1cf18460c38966c8b6"
+                "reference": "0d14a9f6d04d4ac38a8cea1171f4554e325dae92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/eca495f2ee845130855ddf1cf18460c38966c8b6",
-                "reference": "eca495f2ee845130855ddf1cf18460c38966c8b6",
+                "url": "https://api.github.com/repos/symfony/console/zipball/0d14a9f6d04d4ac38a8cea1171f4554e325dae92",
+                "reference": "0d14a9f6d04d4ac38a8cea1171f4554e325dae92",
                 "shasum": ""
             },
             "require": {
@@ -3241,7 +3438,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v6.3.4"
+                "source": "https://github.com/symfony/console/tree/v6.3.8"
             },
             "funding": [
                 {
@@ -3257,7 +3454,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-16T10:10:12+00:00"
+            "time": "2023-10-31T08:09:35+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -3687,16 +3884,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v6.3.7",
+            "version": "v6.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "59d1837d5d992d16c2628cd0d6b76acf8d69b33e"
+                "reference": "ce332676de1912c4389222987193c3ef38033df6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/59d1837d5d992d16c2628cd0d6b76acf8d69b33e",
-                "reference": "59d1837d5d992d16c2628cd0d6b76acf8d69b33e",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/ce332676de1912c4389222987193c3ef38033df6",
+                "reference": "ce332676de1912c4389222987193c3ef38033df6",
                 "shasum": ""
             },
             "require": {
@@ -3744,7 +3941,7 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v6.3.7"
+                "source": "https://github.com/symfony/http-foundation/tree/v6.3.8"
             },
             "funding": [
                 {
@@ -3760,20 +3957,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-28T23:55:27+00:00"
+            "time": "2023-11-07T10:17:15+00:00"
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v6.3.7",
+            "version": "v6.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "6d4098095f93279d9536a0e9124439560cc764d0"
+                "reference": "929202375ccf44a309c34aeca8305408442ebcc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/6d4098095f93279d9536a0e9124439560cc764d0",
-                "reference": "6d4098095f93279d9536a0e9124439560cc764d0",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/929202375ccf44a309c34aeca8305408442ebcc1",
+                "reference": "929202375ccf44a309c34aeca8305408442ebcc1",
                 "shasum": ""
             },
             "require": {
@@ -3857,7 +4054,7 @@
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-kernel/tree/v6.3.7"
+                "source": "https://github.com/symfony/http-kernel/tree/v6.3.8"
             },
             "funding": [
                 {
@@ -3873,7 +4070,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-29T14:31:45+00:00"
+            "time": "2023-11-10T13:47:32+00:00"
         },
         {
             "name": "symfony/mailer",
@@ -5005,16 +5202,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v6.3.5",
+            "version": "v6.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "13d76d0fb049051ed12a04bef4f9de8715bea339"
+                "reference": "13880a87790c76ef994c91e87efb96134522577a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/13d76d0fb049051ed12a04bef4f9de8715bea339",
-                "reference": "13d76d0fb049051ed12a04bef4f9de8715bea339",
+                "url": "https://api.github.com/repos/symfony/string/zipball/13880a87790c76ef994c91e87efb96134522577a",
+                "reference": "13880a87790c76ef994c91e87efb96134522577a",
                 "shasum": ""
             },
             "require": {
@@ -5071,7 +5268,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v6.3.5"
+                "source": "https://github.com/symfony/string/tree/v6.3.8"
             },
             "funding": [
                 {
@@ -5087,7 +5284,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-09-18T10:38:32+00:00"
+            "time": "2023-11-09T08:28:21+00:00"
         },
         {
             "name": "symfony/translation",
@@ -5264,16 +5461,16 @@
         },
         {
             "name": "symfony/uid",
-            "version": "v6.3.0",
+            "version": "v6.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/uid.git",
-                "reference": "01b0f20b1351d997711c56f1638f7a8c3061e384"
+                "reference": "819fa5ac210fb7ddda4752b91a82f50be7493dd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/uid/zipball/01b0f20b1351d997711c56f1638f7a8c3061e384",
-                "reference": "01b0f20b1351d997711c56f1638f7a8c3061e384",
+                "url": "https://api.github.com/repos/symfony/uid/zipball/819fa5ac210fb7ddda4752b91a82f50be7493dd9",
+                "reference": "819fa5ac210fb7ddda4752b91a82f50be7493dd9",
                 "shasum": ""
             },
             "require": {
@@ -5318,7 +5515,7 @@
                 "uuid"
             ],
             "support": {
-                "source": "https://github.com/symfony/uid/tree/v6.3.0"
+                "source": "https://github.com/symfony/uid/tree/v6.3.8"
             },
             "funding": [
                 {
@@ -5334,20 +5531,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-04-08T07:25:02+00:00"
+            "time": "2023-10-31T08:07:48+00:00"
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v6.3.6",
+            "version": "v6.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "999ede244507c32b8e43aebaa10e9fce20de7c97"
+                "reference": "81acabba9046550e89634876ca64bfcd3c06aa0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/999ede244507c32b8e43aebaa10e9fce20de7c97",
-                "reference": "999ede244507c32b8e43aebaa10e9fce20de7c97",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/81acabba9046550e89634876ca64bfcd3c06aa0a",
+                "reference": "81acabba9046550e89634876ca64bfcd3c06aa0a",
                 "shasum": ""
             },
             "require": {
@@ -5402,7 +5599,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v6.3.6"
+                "source": "https://github.com/symfony/var-dumper/tree/v6.3.8"
             },
             "funding": [
                 {
@@ -5418,7 +5615,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-12T18:45:56+00:00"
+            "time": "2023-11-08T10:42:36+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -8009,16 +8206,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v6.3.7",
+            "version": "v6.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "9758b6c69d179936435d0ffb577c3708d57e38a8"
+                "reference": "3493af8a8dad7fa91c77fa473ba23ecd95334a92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/9758b6c69d179936435d0ffb577c3708d57e38a8",
-                "reference": "9758b6c69d179936435d0ffb577c3708d57e38a8",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/3493af8a8dad7fa91c77fa473ba23ecd95334a92",
+                "reference": "3493af8a8dad7fa91c77fa473ba23ecd95334a92",
                 "shasum": ""
             },
             "require": {
@@ -8061,7 +8258,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v6.3.7"
+                "source": "https://github.com/symfony/yaml/tree/v6.3.8"
             },
             "funding": [
                 {
@@ -8077,7 +8274,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-28T23:31:00+00:00"
+            "time": "2023-11-06T10:58:05+00:00"
         },
         {
             "name": "theseer/tokenizer",

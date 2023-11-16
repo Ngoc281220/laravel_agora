@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id')->nullable();
             $table->string('app_id')->nullable();
+            $table->string('token')->nullable();
             $table->string('appCertificate')->nullable();
             $table->string('channel')->nullable();
             $table->string('url')->nullable();

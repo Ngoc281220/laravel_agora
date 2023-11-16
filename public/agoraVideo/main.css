@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Video Streams</title>
-  <meta name="csrf-token" content="{{ csrf_token() }}">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js"crossorigin="anonymous"></script>
-
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    body{
+body{
     background:#0F2027;
     background:-webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027) ;
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
@@ -150,64 +136,3 @@ button{
         width: 95%;
     }
 }
-  </style>
-</head>
-
-<body >
-  <input type="text" id="linkUrl" value="" placeholder="Enter Link">
-
-  <button id="join-btn1" onclick="joinUserMeeting()">Join Meeting</button>
-
-  @if(Auth::User())
-    <button id="join-btn2" onclick="createRoom()">createRoom</button>
-@endif
-
-</body>
-<!-- <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-
-    function joinUserMeeting()
-    {
-        var link  = $('#linkUrl').val();
-        if(link.trim() == '' || link.length < 1){
-            alert('PLease enter the link');
-            return;
-        }else{
-            window.location.href = link;
-        }
-    }
-
-        function getRandomInt(min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-
-        function generateRandomUid() {
-            return getRandomInt(100000, 999999);
-        }
-
-    function createRoom() {
-        const uid = generateRandomUid();
-        const url = "{{ route('createRoom') }}";
-        const csrfToken = $('meta[name="csrf-token"]').attr('content');
-        $.ajax({
-            url: url,
-            method: "POST",
-            data: {
-                uid: uid,
-                _token: csrfToken
-            },
-            dataType: "json",  // Kiểu dữ liệu bạn mong đợi từ phản hồi
-            success: function(data) {
-                window.location.href = data;
-            },
-            error: function(jqXHR, textStatus, errorThrown) {
-                console.error("Error:", textStatus, errorThrown);
-                // Xử lý lỗi ở đây
-            }
-        });
-    }
-
-</script>
-
-</html>
